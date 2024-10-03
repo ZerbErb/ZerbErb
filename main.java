@@ -25,6 +25,23 @@ public class Main {
   } // end of main
 
   public static void problem1() {
+    String nStr = getString("Enter a number:");
+    int n = Integer.valueOf(nStr);
+    // String -> int      Integer.valueOf(aStr);
+    // String -> double   Double.valueOf(aStr);
+
+    int sum = 0;
+    int currentOdd = 1;
+
+    for (int k = 0; k < n; k++) {
+      // will repeat n times
+      sum = sum + currentOdd;
+      System.out.println("Cumulative Sum: " + sum + 
+        " Current Odd: " + currentOdd);
+
+      currentOdd = currentOdd + 2; // 1 -> 3
+
+
     // summation
     
   }
